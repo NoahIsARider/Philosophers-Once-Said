@@ -1,58 +1,58 @@
-# 哲学家对话系统
+# Philosopher Dialogue System
 
-这是一个基于大语言模型的哲学家对话系统，允许用户与多位著名哲学家进行对话交流。通过先进的AI技术，系统能够模拟哲学家的思维方式和表达风格，为用户提供沉浸式的哲学交流体验。
+This is a large language model (LLM) based philosopher dialogue system that lets users converse with several famous philosophers. Leveraging advanced AI technology, the system simulates each philosopher's way of thinking and style of expression, delivering an immersive philosophical exchange experience.
 
-## 🌟 核心特色
+## 🌟 Core Features
 
-- **多哲学家并行对话**：同时与多位哲学家对话，比较不同哲学流派的观点和思想
-- **实时网络搜索集成**：系统集成了网络搜索功能，哲学家可以获取并引用最新信息回答问题
-- **模块化设计**：采用模块化的Agent架构，便于扩展和添加新的哲学家角色
-- **流式响应体验**：实时流式输出回复，提供类似真人对话的自然体验
-- **个性化哲学风格**：每位哲学家都保持其独特的思想体系和表达方式
-- **现代化界面**：简洁直观的用户界面，支持多种交互方式
+- **Parallel multi-philosopher dialogue**: chat with multiple philosophers at once and compare viewpoints across different schools of thought
+- **Real-time web search integration**: built-in web search lets philosophers retrieve and cite the latest information when answering
+- **Modular design**: a modular agent architecture makes it easy to extend and add new philosopher characters
+- **Streaming responses**: real-time streaming output for a natural, human-like conversation experience
+- **Personalized philosophical styles**: every philosopher maintains their own unique system of thought and manner of expression
+- **Modern interface**: a clean, intuitive GUI supporting multiple ways to interact
 
-## 支持的哲学家
+## Supported Philosophers
 
-- 吉尔·德勒兹 (Gilles Deleuze)
-- 巴鲁赫·斯宾诺莎 (Baruch Spinoza)
-- 雅克·朗西埃 (Jacques Rancière)
-- 米歇尔·福柯 (Michel Foucault)
-- 斯拉沃热·齐泽克 (Slavoj Žižek)
+- Gilles Deleuze
+- Baruch Spinoza
+- Jacques Rancière
+- Michel Foucault
+- Slavoj Žižek
 
-## 安装依赖
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 
-# 安装Playwright浏览器（必需步骤，用于网络搜索功能）
+# Install the Playwright browser (required step, used for the web search feature)
 python -m playwright install chromium
 ```
 
-## 运行程序
+## Run the Program
 
 ```bash
 python app.py
 ```
 
-## 使用说明
+## Usage
 
-1. 在左侧选择一个或多个想要对话的哲学家
-2. 在下方输入框中输入您的问题或想法
-3. 点击发送按钮或按回车键发送消息
-4. 等待哲学家们的回应
-5. 可以使用网络搜索功能获取最新信息，哲学家会在回答中参考这些信息
+1. Select one or more philosophers to talk to on the left
+2. Type your question or thought into the input box at the bottom
+3. Click the send button or press Enter to send the message
+4. Wait for the philosophers' responses
+5. You can use the web search feature to fetch the latest information, and the philosophers will reference it in their answers
 
-## 技术特点
+## Technical Details
 
-- 使用OpenAI API实现哲学家的思维模拟
-- 基于customtkinter构建现代化GUI界面
-- 多线程处理确保界面响应流畅
-- 独立的Agent模块设计，便于扩展
-- 集成网络搜索功能，增强回答的时效性和准确性
+- Uses the OpenAI API to simulate the philosophers' thinking
+- Modern GUI built with customtkinter
+- Multi-threaded processing keeps the interface responsive
+- Independent agent modules for easy extension
+- Integrated web search enhances the timeliness and accuracy of answers
 
-## 注意事项
+## Notes
 
-- 请确保您有可用的网络连接
-- API密钥配置在.env文件中，请确保正确设置
-- 建议每次对话选择1-2位哲学家，以获得更好的对话体验
-- 网络搜索功能需要安装Playwright浏览器
+- Make sure you have a working network connection
+- API keys are configured in the `.env` file; make sure they are set correctly
+- We recommend selecting 1-2 philosophers per session for a better dialogue experience
+- The web search feature requires the Playwright browser to be installed
